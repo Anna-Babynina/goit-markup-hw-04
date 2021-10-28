@@ -131,22 +131,32 @@ header {
 }
 
 .envelope-header {
-  display: flex;
+  display: block;
   align-items: center;
+  justify-content: center;
 }
 
 .mobile-header {
-  display: flex;
+  display: block;
   align-items: center;
+  justify-content: center;
 }
 
 .envelope-icon {
-  fill: currentColor#757575;
+  fill: currentColor;
   margin-right: 10px;
-  display: block;
 }
+.mobil-icon {
+  fill: currentColor;
+  margin-right: 10px;
+}
+.mailto-icon {
+  display: flex;
+  justify-content: center;
+}
+
 .mailto-icon:hover,
-.mailto-icon:hover {
+.mailto-icon:focus {
   color: var(--accent-color);
 }
 
@@ -483,9 +493,10 @@ header {
   justify-content: center;
   margin-top: 50px;
 }
-.clients-container {
+.clients-list .clients-item {
   width: 170px;
   height: 92px;
+  color: var(--primary-text-color);
 }
 
 .clients-container:not(:last-child) {
@@ -493,7 +504,7 @@ header {
 }
 
 .clients-item-icon {
-  color: currentColor;
+  fill: currentColor;
 }
 
 .clients-item {
@@ -507,13 +518,14 @@ header {
   box-sizing: border-box;
   border: 1px solid #afb1b8;
 }
+
 .clients-item:hover,
 .clients-item:focus {
   border-color: var(--accent-color);
 }
 .clients-item:hover .clients-item-icon,
 .clients-item:focus .clients-item-icon {
-  color: var(--accent-color);
+  fill: var(--accent-color);
 }
 
 /* ------------------contacts-------------------- */
